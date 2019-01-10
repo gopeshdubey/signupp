@@ -10,8 +10,8 @@ app.use(bodyParser.json());
 function getConnection() {
   return  mysql.createConnection({
       host     : 'localhost',
-      user     : 'root',
-      password : '',
+      user     : 'admin',
+      password : 'admin123',
       database : 'data',
       multipleStatements: true
   })
