@@ -28,6 +28,8 @@ db.connect((err) => {
 });
 
 app.get('/show', (req, res) => {
+  
+  console.log("inside db");
   db.query('SELECT * FROM `dataa`', (err, rows, fields) => {
     if(!err)
     res.send(rows)
