@@ -60,6 +60,7 @@ app.post('/signup', (req, res) => {
                              db.query(sql, [newUserMysql.username, newUserMysql.password], (err, rows, fields) =>  {
                                if(!err){
                                          res.send({key: rows});
+                                         console.log("inside db");
                                        }
                                          else {
                                            console.log(err);
