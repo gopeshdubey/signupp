@@ -31,6 +31,7 @@ app.get('/show', (req, res) => {
   db.query('SELECT * FROM `dataa`', (err, rows, fields) => {
     if(!err)
     res.send(rows)
+    console.log("inside db");
     else {
       console.log(err);
     }
