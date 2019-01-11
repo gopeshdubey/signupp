@@ -27,6 +27,12 @@ db.connect((err) => {
     console.log('MySql Connected...');
 });
 
+app.get('/hello', (req, res) => {
+  
+  console.log("inside form");
+
+})
+
 app.get('/show', (req, res) => {
   
   console.log("inside db");
